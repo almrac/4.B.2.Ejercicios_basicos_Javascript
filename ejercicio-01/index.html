@@ -58,10 +58,19 @@
 			border: 1px solid #cbd5e1;
 		}
 
-		a {
+		.volver {
 			display: inline-block;
 			margin-top: 1rem;
-			color: #1d4ed8;
+			padding: 0.7rem 1rem;
+			border-radius: 0.7rem;
+			background: #e2e8f0;
+			color: #1e293b;
+			text-decoration: none;
+			font-weight: 600;
+		}
+
+		.volver:hover {
+			background: #cbd5e1;
 		}
 	</style>
 </head>
@@ -71,7 +80,7 @@
 		<p>Pulsa el botón para lanzar dos dados aleatorios, sumar sus resultados y ver el resultado con <code>alert</code> y también en la página.</p>
 		<button id="btn-lanzar" type="button">Lanzar dados</button>
 		<div id="resultado">Todavía no se ha realizado ningún lanzamiento.</div>
-		<a href="../index.html">Volver al índice</a>
+		<a class="volver" href="../index.html">Volver al índice</a>
 	</main>
 
 	<script>
