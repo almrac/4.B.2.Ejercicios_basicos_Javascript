@@ -34,6 +34,25 @@
 			line-height: 1.5;
 		}
 
+		.pista {
+			display: block;
+			width: fit-content;
+			margin-bottom: 1rem;
+			padding: 0.5rem 0.75rem;
+			border-radius: 999px;
+			background: #eff6ff;
+			border: 1px solid #bfdbfe;
+			color: #1e3a8a;
+			font-size: 0.95rem;
+		}
+
+		.pista code {
+			background: #dbeafe;
+			padding: 0.15rem 0.4rem;
+			border-radius: 0.4rem;
+			font-family: "Courier New", Courier, monospace;
+		}
+
 		button {
 			padding: 0.85rem 1.2rem;
 			border: none;
@@ -77,6 +96,7 @@
 	<main>
 		<h1>Login con intentos</h1>
 		<p>Pulsa el botón para introducir una clave. El usuario solo tendrá 3 intentos y, si falla los tres, el programa se bloqueará.</p>
+		<div class="pista">Pista: clave de prueba <code>seguridad123</code></div>
 		<button id="btn-login" type="button" onclick="iniciarLogin()">Iniciar login</button>
 		<div id="resultado">Todavía no se ha realizado ningún intento de acceso.</div>
 		<a class="volver" href="../index.html">Volver al índice</a>
